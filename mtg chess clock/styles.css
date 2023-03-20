@@ -1,0 +1,99 @@
+.stopwatch-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.stopwatch-header {
+  text-align: center;
+}
+
+.stopwatch-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.player h3 {
+  margin-top: 0;
+}
+
+.elapsed-time {
+  font-size: 3em;
+  margin-top: 10px;
+}
+
+.life-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.life-counter button {
+  font-size: 1.5em;
+  padding: 5px 10px;
+  margin: 0 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.life-total {
+  font-size: 2em;
+  margin: 0 10px;
+}
+
+
+#player1-timer {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+#player2-timer {
+  position: fixed;
+  top: 10px;
+  left: 210px;
+}
+
+#player3-timer {
+  position: fixed;
+  top: 220px;
+  left: 10px;
+}
+
+#player4-timer {
+  position: fixed;
+  top: 220px;
+  left: 210px;
+}
+
+.player:nth-child(1),
+.player:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(180deg);
+}
+
+#stop-button {
+  position: fixed;
+  z-index: 9999;
+  top: 205px;
+  left: 170px;
+}
