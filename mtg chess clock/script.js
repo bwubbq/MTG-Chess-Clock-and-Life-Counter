@@ -36,6 +36,9 @@ buttons.forEach(button => {
 // Loop through each start timer button and add an event listener
 startTimerButtons.forEach((startTimerButton, index) => {
   startTimerButton.addEventListener('click', () => {
+    // Stop any existing intervals
+    intervals.forEach(interval => clearInterval(interval));
+    
     // Set the start time to the current time
     const startTime = new Date().getTime();
 
@@ -55,6 +58,7 @@ startTimerButtons.forEach((startTimerButton, index) => {
     currentPlayerEl.classList.add('priority');
   });
 });
+
 
 //listener for anticlockwise toggle
 const antiClockwiseButton = document.querySelector('.anti-clockwise');
