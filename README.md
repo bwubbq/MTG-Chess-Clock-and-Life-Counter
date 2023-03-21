@@ -1,5 +1,8 @@
 # MTG-Chess-Clock-and-Life-Counter
 
+version 3
+-fix to bug where timer didn't stop if player 1 wasn't the starting player
+
 version 2
 -responsive ui
 -working button to reverse the flow
