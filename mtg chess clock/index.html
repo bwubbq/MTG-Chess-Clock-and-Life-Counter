@@ -1,70 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link type="text/css" rel="stylesheet" href="styles.css" />
+  <link type="text/css" rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-<div class="player" id="player1-timer">
-  <h2>Player 1</h2>
+  <div class="player" id="player1-timer">
+    <h2>Player 1</h2>
+    <div class="timer-controls">
+      <button class="start-timer">Start Timer</button>
+      <button class="pass-priority">Pass Priority</button>
+    </div>
+    <div class="life-counter">
+      <button class="minus-life">-</button>
+      <span class="life-total">40</span>
+      <button class="plus-life">+</button>
+    </div>
+    <div class="elapsed-time">00:00.000</div>
+  </div>
+
+  <div class="player" id="player2-timer">
+    <h2>Player 2</h2>
+    <div class="timer-controls">
+      <button class="start-timer">Start Timer</button>
+      <button class="pass-priority">Pass Priority</button>
+    </div>
+    <div class="life-counter">
+      <button class="minus-life">-</button>
+      <span class="life-total">40</span>
+      <button class="plus-life">+</button>
+    </div>
+    <div class="elapsed-time">00:00.000</div>
+  </div>
+
+  <div class="player" id="player4-timer">
+    <h2>Player 4</h2>
+    <div class="timer-controls">
+      <button class="start-timer">Start Timer</button>
+      <button class="pass-priority">Pass Priority</button>
+    </div>
+    <div class="life-counter">
+      <button class="minus-life">-</button>
+      <span class="life-total">40</span>
+      <button class="plus-life">+</button>
+    </div>
+    <div class="elapsed-time">00:00.000</div>
+  </div>
+
+  <div class="player" id="player3-timer">
+    <h2>Player 3</h2>
+    <div class="timer-controls">
+      <button class="start-timer">Start Timer</button>
+      <button class="pass-priority">Pass Priority</button>
+    </div>
+    <div class="life-counter">
+      <button class="minus-life">-</button>
+      <span class="life-total">40</span>
+      <button class="plus-life">+</button>
+    </div>
+    <div class="elapsed-time">00:00.000</div>
+  </div>
+
   <div class="timer-controls">
-    <button class="start-timer">Start Timer</button>
-    <button class="pass-priority">Pass Priority</button>
+    <button class="stop-timer" id="stop-button">Stop Timer</button>
+    <button class="pass-priority anti-clockwise">Anti-clockwise</button>
   </div>
-  <div class="life-counter">
-    <button class="minus-life">-</button>
-    <span class="life-total">40</span>
-    <button class="plus-life">+</button>
-  </div>
-  <div class="elapsed-time">00:00.000</div>
-</div>
 
-<div class="player" id="player2-timer">
-  <h2>Player 2</h2>
-  <div class="timer-controls">
-    <button class="start-timer">Start Timer</button>
-    <button class="pass-priority">Pass Priority</button>
-  </div>
-  <div class="life-counter">
-    <button class="minus-life">-</button>
-    <span class="life-total">40</span>
-    <button class="plus-life" >+</button>
-  </div>
-  <div class="elapsed-time">00:00.000</div>
-</div>
 
-<div class="player" id="player3-timer">
-  <h2>Player 3</h2>
-  <div class="timer-controls">
-    <button class="start-timer" >Start Timer</button>
-    <button class="pass-priority">Pass Priority</button>
-  </div>
-  <div class="life-counter">
-    <button class="minus-life">-</button>
-    <span class="life-total">40</span>
-    <button class="plus-life">+</button>
-  </div>
-  <div class="elapsed-time">00:00.000</div>
-</div>
-
-<div class="player" id="player4-timer">
-  <h2>Player 4</h2>
-  <div class="timer-controls">
-    <button class="start-timer">Start Timer</button>
-    <button class="pass-priority">Pass Priority</button>
-  </div>
-  <div class="life-counter">
-    <button class="minus-life">-</button>
-    <span class="life-total">40</span>
-    <button class="plus-life">+</button>
-  </div>
-  <div class="elapsed-time">00:00.000</div>
-</div>
-
-<div class="timer-controls">
-  <button class="stop-timer" id="stop-button">Stop Timer</button>
-</div>
-
-<script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 
 </body>
+
 </html>

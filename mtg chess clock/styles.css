@@ -1,10 +1,16 @@
+/* CSS for responsive stopwatch */
+
 .stopwatch-container {
-  max-width: 600px;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content;
 }
 
 .stopwatch-header {
   text-align: center;
+  padding-top: 20px;
 }
 
 .stopwatch-grid {
@@ -12,6 +18,8 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
+  height: calc(100% - 200px);
+  padding: 20px;
 }
 
 .player {
@@ -22,6 +30,9 @@
   background-color: #f5f5f5;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  width: 48%;
+  height: 45%;
+  border: solid 2px #ccc;
 }
 
 .player h3 {
@@ -51,36 +62,33 @@
   cursor: pointer;
 }
 
-
-
 .life-total {
   font-size: 2em;
   margin: 0 10px;
 }
 
-
 #player1-timer {
-  position: fixed;
+  position: absolute;
   top: 10px;
   left: 10px;
 }
 
 #player2-timer {
-  position: fixed;
+  position: absolute;
   top: 10px;
-  left: 210px;
+  right: 10px;
 }
 
 #player3-timer {
-  position: fixed;
-  top: 220px;
+  position: absolute;
+  bottom: 10px;
   left: 10px;
 }
 
 #player4-timer {
-  position: fixed;
-  top: 220px;
-  left: 210px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 .player:nth-child(1),
@@ -92,8 +100,17 @@
 }
 
 #stop-button {
-  position: fixed;
+  position: absolute;
   z-index: 9999;
-  top: 205px;
-  left: 170px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.anti-clockwise {
+  position: absolute;
+  z-index: 9999;
+  left: calc(50% - 100px);
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
